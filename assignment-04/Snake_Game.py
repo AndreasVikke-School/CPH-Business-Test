@@ -8,6 +8,7 @@ from tkinter.ttk import *
 class GFG:
     def __init__(self, master = None):
         self.master = master
+        self.points = 0
           
         # to take care movement in x direction
         self.x = 0
@@ -26,7 +27,8 @@ class GFG:
                          20, 20, 20+self.playerSize, 20+self.playerSize, fill = "red")
                          
         self.canvas.pack()
-        self.speed = 500
+        self.speed = 400
+        self.top_speed = 80
         self.tail = []
         # calling class's movement method to 
         # move the rectangle
@@ -43,23 +45,12 @@ class GFG:
     def spawn(self):
         coordsPlayer = self.canvas.coords(self.rectangle)
         coordsFood = self.canvas.coords(self.food)
-        print(coordsPlayer)
-        print(coordsFood)
+        # print(coordsPlayer)
+        # print(coordsFood)
         if(coordsPlayer[0] == coordsFood[0] and coordsPlayer[3] == coordsFood[3]):
-            self.tail.append(self.canvas.create_rectangle(coordsPlayer[0], coordsPlayer[1], coordsPlayer[2], coordsPlayer[3], fill='black'))
-            self.speed = round(self.speed * 0.9)
-            self.canvas.delete(self.food)
-            rndX = rnd.randrange(0, self.width-self.playerSize, self.playerSize)
-            rndY = rnd.randrange(0, self.height-self.playerSize, self.playerSize)
-            while(True):
-                if( rndX == coordsPlayer[0] and rndY == coordsPlayer[2]):
-                    rndX = rnd.randrange(0, self.width-self.playerSize, self.playerSize)
-                    rndY = rnd.randrange(0, self.height-self.playerSize, self.playerSize)
-                else:
-                    break
-            self.food = self.canvas.create_oval(
-                         rndX, rndY, rndX+self.playerSize, rndY+self.playerSize, fill = "red")
+            self.eat(coordsPlayer)
         else:
+            self.win()
             self.kill(coordsPlayer)
         
     def movement(self):
@@ -67,13 +58,13 @@ class GFG:
         # This moves the rectangle to x, y coordinates
         coords = self.canvas.coords(self.rectangle)
         if(coords[0] < 0):
-            self.canvas.move(self.rectangle, self.width-self.playerSize, self.y)
+            self.canvas.move(self.rectangle, self.width, self.y)
         elif(coords[2] > self.width):
-            self.canvas.move(self.rectangle, -self.width+self.playerSize, self.y)
+            self.canvas.move(self.rectangle, -self.width, self.y)
         elif(coords[1] < 0):
-            self.canvas.move(self.rectangle, self.x, self.height-self.playerSize)
+            self.canvas.move(self.rectangle, self.x, self.height)
         elif(coords[3] > self.height):
-            self.canvas.move(self.rectangle, self.x, -self.height+self.playerSize)
+            self.canvas.move(self.rectangle, self.x, -self.height)
         else:
             self.canvas.move(self.rectangle, self.x, self.y)
         self.spawn()
@@ -95,41 +86,67 @@ class GFG:
                 python = sys.executable
                 os.execl(python, python, * sys.argv)
 
+    def eat(self, coordsPlayer):
+        self.tail.append(self.canvas.create_rectangle(
+            coordsPlayer[0], coordsPlayer[1], coordsPlayer[2], coordsPlayer[3], fill='black'))
+        self.speed = round(self.speed * 0.9) if self.speed > self.top_speed else self.top_speed
+        self.canvas.delete(self.food)
+        self.points += 10
+        print("Points: " + str(self.points))
+        self.spawn_food(coordsPlayer)
+        
+    def spawn_food(self, coordsPlayer):
+        rndX = rnd.randrange(
+            0, self.width-self.playerSize, self.playerSize)
+        rndY = rnd.randrange(
+            0, self.height-self.playerSize, self.playerSize)
+        while(True):
+            if(rndX == coordsPlayer[0] and rndY == coordsPlayer[2]):
+                rndX = rnd.randrange(
+                    0, self.width-self.playerSize, self.playerSize)
+                rndY = rnd.randrange(
+                    0, self.height-self.playerSize, self.playerSize)
+            else:
+                break
+        self.food = self.canvas.create_oval(
+            rndX, rndY, rndX+self.playerSize, rndY+self.playerSize, fill="red")
+
+    def win(self):
+        max = (self.height / self.playerSize) * (self.width / self.playerSize)
+        if len(self.tail) + 1 >= max:
+            print("You Win!")
+            python = sys.executable
+            os.execl(python, python, * sys.argv)
 
 
     # for motion in negative x direction
     def left(self, event):
-        print(event.keysym)
+        # print(event.keysym)
         if(self.x == 0):
             self.x = -self.playerSize
             self.y = 0
       
     # for motion in positive x direction
     def right(self, event):
-        print(event.keysym)
+        # print(event.keysym)
         if(self.x == 0):
             self.x = self.playerSize
             self.y = 0
       
     # for motion in positive y direction
     def up(self, event):
-        print(event.keysym)
+        # print(event.keysym)
         if(self.y == 0):
             self.x = 0
             self.y = -self.playerSize
         
     # for motion in negative y direction
     def down(self, event):
-        print(event.keysym)
+        # print(event.keysym)
         if(self.y == 0):
             self.x = 0
             self.y = self.playerSize
 
-    #setSpeed
-    def setSpeed(self, event):
-        print(self.speed)
-        self.speed = 500 if self.speed < 500 else 100
-  
 if __name__ == "__main__":
   
     # object of class Tk, resposible for creating
@@ -143,7 +160,6 @@ if __name__ == "__main__":
     master.bind("<KeyPress-Right>", lambda e: gfg.right(e))
     master.bind("<KeyPress-Up>", lambda e: gfg.up(e))
     master.bind("<KeyPress-Down>", lambda e: gfg.down(e))
-    master.bind("<KeyPress-a>", lambda e: gfg.setSpeed(e))
       
     # Infnite loop breaks only by interrupt
     mainloop()
