@@ -1,0 +1,1737 @@
+coverage:
+  all_nodes: 0
+  covered_nodes: 0
+mutation_score: 22.36024844720497
+mutations:
+- exception_traceback: null
+  killer: null
+  module: &id001 !!python/module:Snake_Game ''
+  mutations:
+  - lineno: 63
+    operator: AOD
+  number: 1
+  status: survived
+  tests_run: 15
+  time: 0.7849991321563721
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 67
+    operator: AOD
+  number: 2
+  status: survived
+  tests_run: 15
+  time: 0.79599928855896
+- exception_traceback: "Traceback (most recent call last):\n  File \".\\test_snake.py\"\
+    , line 81, in test_left\n    self.assertGreater(xCoordBefore, xCoordAfter)\nAssertionError:\
+    \ 0 not greater than 20\n"
+  killer: test_left (test_snake.TestSnake)
+  module: *id001
+  mutations:
+  - lineno: 126
+    operator: AOD
+  number: 3
+  status: killed
+  tests_run: 6
+  time: 0.3149991035461426
+- exception_traceback: "Traceback (most recent call last):\n  File \".\\test_snake.py\"\
+    , line 93, in test_up\n    self.assertGreater(yCoordBefore, yCoordAfter)\nAssertionError:\
+    \ 0 not greater than 20\n"
+  killer: test_up (test_snake.TestSnake)
+  module: *id001
+  mutations:
+  - lineno: 141
+    operator: AOD
+  number: 4
+  status: killed
+  tests_run: 14
+  time: 0.7350013256072998
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 25
+    operator: AOR
+  number: 5
+  status: survived
+  tests_run: 15
+  time: 0.7849996089935303
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 25
+    operator: AOR
+  number: 6
+  status: survived
+  tests_run: 15
+  time: 0.7879984378814697
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 27
+    operator: AOR
+  number: 7
+  status: survived
+  tests_run: 15
+  time: 0.7850015163421631
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 27
+    operator: AOR
+  number: 8
+  status: survived
+  tests_run: 15
+  time: 0.7880024909973145
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 63
+    operator: AOR
+  number: 9
+  status: survived
+  tests_run: 15
+  time: 0.7859992980957031
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 67
+    operator: AOR
+  number: 10
+  status: survived
+  tests_run: 15
+  time: 0.7840011119842529
+- exception_traceback: "Traceback (most recent call last):\n  File \".\\test_snake.py\"\
+    , line 26, in test_speed_increase\n    self.assertLess(increasedSpeed, normalSpeed)\n\
+    AssertionError: 444 not less than 400\n"
+  killer: test_speed_increase (test_snake.TestSnake)
+  module: *id001
+  mutations:
+  - lineno: 92
+    operator: AOR
+  number: 11
+  status: killed
+  tests_run: 13
+  time: 0.6820778846740723
+- exception_traceback: "Traceback (most recent call last):\n  File \".\\test_snake.py\"\
+    , line 26, in test_speed_increase\n    self.assertLess(increasedSpeed, normalSpeed)\n\
+    AssertionError: 444 not less than 400\n"
+  killer: test_speed_increase (test_snake.TestSnake)
+  module: *id001
+  mutations:
+  - lineno: 92
+    operator: AOR
+  number: 12
+  status: killed
+  tests_run: 13
+  time: 0.6829991340637207
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 92
+    operator: AOR
+  number: 13
+  status: survived
+  tests_run: 15
+  time: 0.7900004386901855
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 95
+    operator: AOR
+  number: 14
+  status: incompetent
+  tests_run: 13
+  time: 0.7829997539520264
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 100
+    operator: AOR
+  number: 15
+  status: survived
+  tests_run: 15
+  time: 0.7869975566864014
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 102
+    operator: AOR
+  number: 16
+  status: survived
+  tests_run: 15
+  time: 0.7820019721984863
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 106
+    operator: AOR
+  number: 17
+  status: survived
+  tests_run: 15
+  time: 0.786001443862915
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 108
+    operator: AOR
+  number: 18
+  status: survived
+  tests_run: 15
+  time: 0.7869985103607178
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 112
+    operator: AOR
+  number: 19
+  status: survived
+  tests_run: 15
+  time: 0.7880005836486816
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 112
+    operator: AOR
+  number: 20
+  status: survived
+  tests_run: 15
+  time: 0.7910020351409912
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 115
+    operator: AOR
+  number: 21
+  status: survived
+  tests_run: 15
+  time: 0.790999174118042
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 115
+    operator: AOR
+  number: 22
+  status: survived
+  tests_run: 15
+  time: 0.7880003452301025
+- exception_traceback: "Traceback (most recent call last):\n  File \".\\test_snake.py\"\
+    , line 12, in setUp\n    self.gfg = GFG(self.master)\n  File \"Snake_Game\", line\
+    \ 36, in __init__\n  File \"Snake_Game\", line 70, in movement\n  File \"Snake_Game\"\
+    , line 53, in spawn\n  File \"Snake_Game\", line 119, in win\n  File \"C:\\Users\\\
+    William\\anaconda3\\lib\\os.py\", line 540, in execl\n    execv(file, args)\n\
+    OSError: [Errno 12] Not enough space\n"
+  killer: test_down (test_snake.TestSnake)
+  module: *id001
+  mutations:
+  - lineno: 115
+    operator: AOR
+  number: 23
+  status: killed
+  tests_run: 1
+  time: 0.05899930000305176
+- exception_traceback: "Traceback (most recent call last):\n  File \".\\test_snake.py\"\
+    , line 12, in setUp\n    self.gfg = GFG(self.master)\n  File \"Snake_Game\", line\
+    \ 36, in __init__\n  File \"Snake_Game\", line 70, in movement\n  File \"Snake_Game\"\
+    , line 53, in spawn\n  File \"Snake_Game\", line 119, in win\n  File \"C:\\Users\\\
+    William\\anaconda3\\lib\\os.py\", line 540, in execl\n    execv(file, args)\n\
+    OSError: [Errno 12] Not enough space\n"
+  killer: test_down (test_snake.TestSnake)
+  module: *id001
+  mutations:
+  - lineno: 115
+    operator: AOR
+  number: 24
+  status: killed
+  tests_run: 1
+  time: 0.05499982833862305
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 115
+    operator: AOR
+  number: 25
+  status: survived
+  tests_run: 15
+  time: 0.7899994850158691
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 115
+    operator: AOR
+  number: 26
+  status: survived
+  tests_run: 15
+  time: 0.7909989356994629
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 115
+    operator: AOR
+  number: 27
+  status: survived
+  tests_run: 15
+  time: 0.7909984588623047
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 116
+    operator: AOR
+  number: 28
+  status: survived
+  tests_run: 15
+  time: 0.7950005531311035
+- exception_traceback: "Traceback (most recent call last):\n  File \".\\test_snake.py\"\
+    , line 81, in test_left\n    self.assertGreater(xCoordBefore, xCoordAfter)\nAssertionError:\
+    \ 0 not greater than 20\n"
+  killer: test_left (test_snake.TestSnake)
+  module: *id001
+  mutations:
+  - lineno: 126
+    operator: AOR
+  number: 29
+  status: killed
+  tests_run: 6
+  time: 0.3210000991821289
+- exception_traceback: "Traceback (most recent call last):\n  File \".\\test_snake.py\"\
+    , line 93, in test_up\n    self.assertGreater(yCoordBefore, yCoordAfter)\nAssertionError:\
+    \ 0 not greater than 20\n"
+  killer: test_up (test_snake.TestSnake)
+  module: *id001
+  mutations:
+  - lineno: 141
+    operator: AOR
+  number: 30
+  status: killed
+  tests_run: 14
+  time: 0.7419989109039307
+- exception_traceback: "Traceback (most recent call last):\n  File \".\\test_snake.py\"\
+    , line 18, in test_point\n    self.assertEqual(expected_points, self.gfg.points)\n\
+    AssertionError: 10 != -10\n"
+  killer: test_point (test_snake.TestSnake)
+  module: *id001
+  mutations:
+  - lineno: 94
+    operator: ASR
+  number: 31
+  status: killed
+  tests_run: 9
+  time: 0.4759998321533203
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 110
+    operator: BCR
+  number: 32
+  status: timeout
+  tests_run: null
+  time: 5.079023122787476
+- exception_traceback: "Traceback (most recent call last):\n  File \".\\test_snake.py\"\
+    , line 18, in test_point\n    self.assertEqual(expected_points, self.gfg.points)\n\
+    AssertionError: 10 != 20\n"
+  killer: test_point (test_snake.TestSnake)
+  module: *id001
+  mutations:
+  - lineno: 50
+    operator: COI
+  number: 33
+  status: killed
+  tests_run: 9
+  time: 0.49199986457824707
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 60
+    operator: COI
+  number: 34
+  status: survived
+  tests_run: 15
+  time: 0.8060004711151123
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 62
+    operator: COI
+  number: 35
+  status: survived
+  tests_run: 15
+  time: 0.8140034675598145
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 64
+    operator: COI
+  number: 36
+  status: survived
+  tests_run: 15
+  time: 0.8080010414123535
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 66
+    operator: COI
+  number: 37
+  status: survived
+  tests_run: 15
+  time: 0.8050041198730469
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 85
+    operator: COI
+  number: 38
+  status: survived
+  tests_run: 15
+  time: 0.8080012798309326
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 103
+    operator: COI
+  number: 39
+  status: survived
+  tests_run: 15
+  time: 0.8000011444091797
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 104
+    operator: COI
+  number: 40
+  status: survived
+  tests_run: 15
+  time: 0.8120014667510986
+- exception_traceback: "Traceback (most recent call last):\n  File \".\\test_snake.py\"\
+    , line 12, in setUp\n    self.gfg = GFG(self.master)\n  File \"Snake_Game\", line\
+    \ 36, in __init__\n  File \"Snake_Game\", line 70, in movement\n  File \"Snake_Game\"\
+    , line 53, in spawn\n  File \"Snake_Game\", line 119, in win\n  File \"C:\\Users\\\
+    William\\anaconda3\\lib\\os.py\", line 540, in execl\n    execv(file, args)\n\
+    OSError: [Errno 12] Not enough space\n"
+  killer: test_down (test_snake.TestSnake)
+  module: *id001
+  mutations:
+  - lineno: 116
+    operator: COI
+  number: 41
+  status: killed
+  tests_run: 1
+  time: 0.05699896812438965
+- exception_traceback: "Traceback (most recent call last):\n  File \".\\test_snake.py\"\
+    , line 81, in test_left\n    self.assertGreater(xCoordBefore, xCoordAfter)\nAssertionError:\
+    \ 0 not greater than 0\n"
+  killer: test_left (test_snake.TestSnake)
+  module: *id001
+  mutations:
+  - lineno: 125
+    operator: COI
+  number: 42
+  status: killed
+  tests_run: 6
+  time: 0.3229978084564209
+- exception_traceback: "Traceback (most recent call last):\n  File \".\\test_snake.py\"\
+    , line 87, in test_right\n    self.assertLess(xCoordBefore, xCoordAfter)\nAssertionError:\
+    \ 0 not less than 0\n"
+  killer: test_right (test_snake.TestSnake)
+  module: *id001
+  mutations:
+  - lineno: 132
+    operator: COI
+  number: 43
+  status: killed
+  tests_run: 10
+  time: 0.5369999408721924
+- exception_traceback: "Traceback (most recent call last):\n  File \".\\test_snake.py\"\
+    , line 93, in test_up\n    self.assertGreater(yCoordBefore, yCoordAfter)\nAssertionError:\
+    \ 0 not greater than 0\n"
+  killer: test_up (test_snake.TestSnake)
+  module: *id001
+  mutations:
+  - lineno: 139
+    operator: COI
+  number: 44
+  status: killed
+  tests_run: 14
+  time: 0.7529993057250977
+- exception_traceback: "Traceback (most recent call last):\n  File \".\\test_snake.py\"\
+    , line 99, in test_down\n    self.assertLess(yCoordBefore, yCoordAfter)\nAssertionError:\
+    \ 0 not less than 0\n"
+  killer: test_down (test_snake.TestSnake)
+  module: *id001
+  mutations:
+  - lineno: 146
+    operator: COI
+  number: 45
+  status: killed
+  tests_run: 1
+  time: 0.05700063705444336
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 150
+    operator: COI
+  number: 46
+  status: survived
+  tests_run: 15
+  time: 0.8120009899139404
+- exception_traceback: "Traceback (most recent call last):\n  File \".\\test_snake.py\"\
+    , line 18, in test_point\n    self.assertEqual(expected_points, self.gfg.points)\n\
+    AssertionError: 10 != 11\n"
+  killer: test_point (test_snake.TestSnake)
+  module: *id001
+  mutations:
+  - lineno: 11
+    operator: CRP
+  number: 47
+  status: killed
+  tests_run: 9
+  time: 0.48600149154663086
+- exception_traceback: "Traceback (most recent call last):\n  File \".\\test_snake.py\"\
+    , line 81, in test_left\n    self.assertGreater(xCoordBefore, xCoordAfter)\nAssertionError:\
+    \ 1 not greater than 1\n"
+  killer: test_left (test_snake.TestSnake)
+  module: *id001
+  mutations:
+  - lineno: 14
+    operator: CRP
+  number: 48
+  status: killed
+  tests_run: 6
+  time: 0.3259999752044678
+- exception_traceback: "Traceback (most recent call last):\n  File \".\\test_snake.py\"\
+    , line 99, in test_down\n    self.assertLess(yCoordBefore, yCoordAfter)\nAssertionError:\
+    \ 1 not less than 1\n"
+  killer: test_down (test_snake.TestSnake)
+  module: *id001
+  mutations:
+  - lineno: 16
+    operator: CRP
+  number: 49
+  status: killed
+  tests_run: 1
+  time: 0.057000160217285156
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 19
+    operator: CRP
+  number: 50
+  status: survived
+  tests_run: 15
+  time: 0.8078677654266357
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 20
+    operator: CRP
+  number: 51
+  status: survived
+  tests_run: 15
+  time: 0.8060011863708496
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 23
+    operator: CRP
+  number: 52
+  status: survived
+  tests_run: 15
+  time: 0.8469994068145752
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 25
+    operator: CRP
+  number: 53
+  status: survived
+  tests_run: 15
+  time: 0.8080000877380371
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 25
+    operator: CRP
+  number: 54
+  status: survived
+  tests_run: 15
+  time: 0.8059992790222168
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 25
+    operator: CRP
+  number: 55
+  status: survived
+  tests_run: 15
+  time: 0.804999589920044
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 25
+    operator: CRP
+  number: 56
+  status: survived
+  tests_run: 15
+  time: 0.8049972057342529
+- exception_traceback: "Traceback (most recent call last):\n  File \".\\test_snake.py\"\
+    , line 12, in setUp\n    self.gfg = GFG(self.master)\n  File \"Snake_Game\", line\
+    \ 25, in __init__\n  File \"C:\\Users\\William\\anaconda3\\lib\\tkinter\\__init__.py\"\
+    , line 2501, in create_rectangle\n    return self._create('rectangle', args, kw)\n\
+    \  File \"C:\\Users\\William\\anaconda3\\lib\\tkinter\\__init__.py\", line 2480,\
+    \ in _create\n    *(args + self._options(cnf, kw))))\n_tkinter.TclError: unknown\
+    \ color name \"mutpy\"\n"
+  killer: test_down (test_snake.TestSnake)
+  module: *id001
+  mutations:
+  - lineno: 25
+    operator: CRP
+  number: 57
+  status: killed
+  tests_run: 1
+  time: 0.05799984931945801
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 25
+    operator: CRP
+  number: 58
+  status: survived
+  tests_run: 15
+  time: 0.8060014247894287
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 27
+    operator: CRP
+  number: 59
+  status: survived
+  tests_run: 15
+  time: 0.8100011348724365
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 27
+    operator: CRP
+  number: 60
+  status: survived
+  tests_run: 15
+  time: 0.8420000076293945
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 27
+    operator: CRP
+  number: 61
+  status: survived
+  tests_run: 15
+  time: 0.8070001602172852
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 27
+    operator: CRP
+  number: 62
+  status: survived
+  tests_run: 15
+  time: 0.8150177001953125
+- exception_traceback: "Traceback (most recent call last):\n  File \".\\test_snake.py\"\
+    , line 12, in setUp\n    self.gfg = GFG(self.master)\n  File \"Snake_Game\", line\
+    \ 27, in __init__\n  File \"C:\\Users\\William\\anaconda3\\lib\\tkinter\\__init__.py\"\
+    , line 2495, in create_oval\n    return self._create('oval', args, kw)\n  File\
+    \ \"C:\\Users\\William\\anaconda3\\lib\\tkinter\\__init__.py\", line 2480, in\
+    \ _create\n    *(args + self._options(cnf, kw))))\n_tkinter.TclError: unknown\
+    \ color name \"mutpy\"\n"
+  killer: test_down (test_snake.TestSnake)
+  module: *id001
+  mutations:
+  - lineno: 27
+    operator: CRP
+  number: 63
+  status: killed
+  tests_run: 1
+  time: 0.05700063705444336
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 27
+    operator: CRP
+  number: 64
+  status: survived
+  tests_run: 15
+  time: 0.8110001087188721
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 30
+    operator: CRP
+  number: 65
+  status: survived
+  tests_run: 15
+  time: 0.815000057220459
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 31
+    operator: CRP
+  number: 66
+  status: survived
+  tests_run: 15
+  time: 0.8160006999969482
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 40
+    operator: CRP
+  number: 67
+  status: survived
+  tests_run: 15
+  time: 0.8150017261505127
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 40
+    operator: CRP
+  number: 68
+  status: survived
+  tests_run: 15
+  time: 0.8180005550384521
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 41
+    operator: CRP
+  number: 69
+  status: survived
+  tests_run: 15
+  time: 0.8220005035400391
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 41
+    operator: CRP
+  number: 70
+  status: survived
+  tests_run: 15
+  time: 0.8270039558410645
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 41
+    operator: CRP
+  number: 71
+  status: survived
+  tests_run: 15
+  time: 0.8220014572143555
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 42
+    operator: CRP
+  number: 72
+  status: survived
+  tests_run: 15
+  time: 0.8230009078979492
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 42
+    operator: CRP
+  number: 73
+  status: survived
+  tests_run: 15
+  time: 0.8259987831115723
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 43
+    operator: CRP
+  number: 74
+  status: survived
+  tests_run: 15
+  time: 0.8280036449432373
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 43
+    operator: CRP
+  number: 75
+  status: survived
+  tests_run: 15
+  time: 0.8283650875091553
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 43
+    operator: CRP
+  number: 76
+  status: survived
+  tests_run: 15
+  time: 0.8220016956329346
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 50
+    operator: CRP
+  number: 77
+  status: survived
+  tests_run: 15
+  time: 0.8330976963043213
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 50
+    operator: CRP
+  number: 78
+  status: survived
+  tests_run: 15
+  time: 0.8239948749542236
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 50
+    operator: CRP
+  number: 79
+  status: survived
+  tests_run: 15
+  time: 0.8269996643066406
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 50
+    operator: CRP
+  number: 80
+  status: survived
+  tests_run: 15
+  time: 0.818000316619873
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 60
+    operator: CRP
+  number: 81
+  status: survived
+  tests_run: 15
+  time: 0.8260149955749512
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 60
+    operator: CRP
+  number: 82
+  status: survived
+  tests_run: 15
+  time: 0.8270010948181152
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 62
+    operator: CRP
+  number: 83
+  status: survived
+  tests_run: 15
+  time: 0.8289999961853027
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 64
+    operator: CRP
+  number: 84
+  status: survived
+  tests_run: 15
+  time: 0.8276855945587158
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 64
+    operator: CRP
+  number: 85
+  status: survived
+  tests_run: 15
+  time: 0.8290035724639893
+- exception_traceback: "Traceback (most recent call last):\n  File \".\\test_snake.py\"\
+    , line 12, in setUp\n    self.gfg = GFG(self.master)\n  File \"Snake_Game\", line\
+    \ 36, in __init__\n  File \"Snake_Game\", line 66, in movement\nIndexError: list\
+    \ index out of range\n"
+  killer: test_down (test_snake.TestSnake)
+  module: *id001
+  mutations:
+  - lineno: 66
+    operator: CRP
+  number: 86
+  status: killed
+  tests_run: 1
+  time: 0.05800175666809082
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 76
+    operator: CRP
+  number: 87
+  status: survived
+  tests_run: 15
+  time: 0.8320024013519287
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 79
+    operator: CRP
+  number: 88
+  status: survived
+  tests_run: 15
+  time: 0.8240001201629639
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 79
+    operator: CRP
+  number: 89
+  status: survived
+  tests_run: 15
+  time: 0.830003023147583
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 79
+    operator: CRP
+  number: 90
+  status: survived
+  tests_run: 15
+  time: 0.8390007019042969
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 79
+    operator: CRP
+  number: 91
+  status: survived
+  tests_run: 15
+  time: 0.8320012092590332
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 79
+    operator: CRP
+  number: 92
+  status: survived
+  tests_run: 15
+  time: 0.8290016651153564
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 79
+    operator: CRP
+  number: 93
+  status: survived
+  tests_run: 15
+  time: 0.8360002040863037
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 85
+    operator: CRP
+  number: 94
+  status: survived
+  tests_run: 15
+  time: 0.8410005569458008
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 85
+    operator: CRP
+  number: 95
+  status: survived
+  tests_run: 15
+  time: 0.8380048274993896
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 85
+    operator: CRP
+  number: 96
+  status: survived
+  tests_run: 15
+  time: 0.8360016345977783
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 85
+    operator: CRP
+  number: 97
+  status: survived
+  tests_run: 15
+  time: 0.8360006809234619
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 91
+    operator: CRP
+  number: 98
+  status: survived
+  tests_run: 15
+  time: 0.8400003910064697
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 91
+    operator: CRP
+  number: 99
+  status: survived
+  tests_run: 15
+  time: 0.837005615234375
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 91
+    operator: CRP
+  number: 100
+  status: survived
+  tests_run: 15
+  time: 0.8386435508728027
+- exception_traceback: "Traceback (most recent call last):\n  File \".\\test_snake.py\"\
+    , line 17, in test_point\n    self.gfg.eat(coordsPlayer)\n  File \"Snake_Game\"\
+    , line 91, in eat\nIndexError: list index out of range\n"
+  killer: test_point (test_snake.TestSnake)
+  module: *id001
+  mutations:
+  - lineno: 91
+    operator: CRP
+  number: 101
+  status: killed
+  tests_run: 9
+  time: 0.5047798156738281
+- exception_traceback: "Traceback (most recent call last):\n  File \".\\test_snake.py\"\
+    , line 17, in test_point\n    self.gfg.eat(coordsPlayer)\n  File \"Snake_Game\"\
+    , line 91, in eat\n  File \"C:\\Users\\William\\anaconda3\\lib\\tkinter\\__init__.py\"\
+    , line 2501, in create_rectangle\n    return self._create('rectangle', args, kw)\n\
+    \  File \"C:\\Users\\William\\anaconda3\\lib\\tkinter\\__init__.py\", line 2480,\
+    \ in _create\n    *(args + self._options(cnf, kw))))\n_tkinter.TclError: unknown\
+    \ color name \"mutpy\"\n"
+  killer: test_point (test_snake.TestSnake)
+  module: *id001
+  mutations:
+  - lineno: 91
+    operator: CRP
+  number: 102
+  status: killed
+  tests_run: 9
+  time: 0.5039951801300049
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 91
+    operator: CRP
+  number: 103
+  status: survived
+  tests_run: 15
+  time: 0.8359987735748291
+- exception_traceback: "Traceback (most recent call last):\n  File \".\\test_snake.py\"\
+    , line 26, in test_speed_increase\n    self.assertLess(increasedSpeed, normalSpeed)\n\
+    AssertionError: 760 not less than 400\n"
+  killer: test_speed_increase (test_snake.TestSnake)
+  module: *id001
+  mutations:
+  - lineno: 92
+    operator: CRP
+  number: 104
+  status: killed
+  tests_run: 13
+  time: 0.7269992828369141
+- exception_traceback: "Traceback (most recent call last):\n  File \".\\test_snake.py\"\
+    , line 18, in test_point\n    self.assertEqual(expected_points, self.gfg.points)\n\
+    AssertionError: 10 != 11\n"
+  killer: test_point (test_snake.TestSnake)
+  module: *id001
+  mutations:
+  - lineno: 94
+    operator: CRP
+  number: 105
+  status: killed
+  tests_run: 9
+  time: 0.5060019493103027
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 95
+    operator: CRP
+  number: 106
+  status: survived
+  tests_run: 15
+  time: 0.8359968662261963
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 95
+    operator: CRP
+  number: 107
+  status: survived
+  tests_run: 15
+  time: 0.8320024013519287
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 100
+    operator: CRP
+  number: 108
+  status: survived
+  tests_run: 15
+  time: 0.8129992485046387
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 102
+    operator: CRP
+  number: 109
+  status: survived
+  tests_run: 15
+  time: 0.8100004196166992
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 104
+    operator: CRP
+  number: 110
+  status: survived
+  tests_run: 15
+  time: 0.8180484771728516
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 104
+    operator: CRP
+  number: 111
+  status: survived
+  tests_run: 15
+  time: 0.8160011768341064
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 106
+    operator: CRP
+  number: 112
+  status: survived
+  tests_run: 15
+  time: 0.8120009899139404
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 108
+    operator: CRP
+  number: 113
+  status: survived
+  tests_run: 15
+  time: 0.8130013942718506
+- exception_traceback: "Traceback (most recent call last):\n  File \".\\test_snake.py\"\
+    , line 17, in test_point\n    self.gfg.eat(coordsPlayer)\n  File \"Snake_Game\"\
+    , line 96, in eat\n  File \"Snake_Game\", line 112, in spawn_food\n  File \"C:\\\
+    Users\\William\\anaconda3\\lib\\tkinter\\__init__.py\", line 2495, in create_oval\n\
+    \    return self._create('oval', args, kw)\n  File \"C:\\Users\\William\\anaconda3\\\
+    lib\\tkinter\\__init__.py\", line 2480, in _create\n    *(args + self._options(cnf,\
+    \ kw))))\n_tkinter.TclError: unknown color name \"mutpy\"\n"
+  killer: test_point (test_snake.TestSnake)
+  module: *id001
+  mutations:
+  - lineno: 112
+    operator: CRP
+  number: 114
+  status: killed
+  tests_run: 9
+  time: 0.48599934577941895
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 112
+    operator: CRP
+  number: 115
+  status: survived
+  tests_run: 15
+  time: 0.8150002956390381
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 116
+    operator: CRP
+  number: 116
+  status: survived
+  tests_run: 15
+  time: 0.8160018920898438
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 117
+    operator: CRP
+  number: 117
+  status: survived
+  tests_run: 15
+  time: 0.818002462387085
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 117
+    operator: CRP
+  number: 118
+  status: survived
+  tests_run: 15
+  time: 0.817000150680542
+- exception_traceback: "Traceback (most recent call last):\n  File \".\\test_snake.py\"\
+    , line 81, in test_left\n    self.assertGreater(xCoordBefore, xCoordAfter)\nAssertionError:\
+    \ 0 not greater than 0\n"
+  killer: test_left (test_snake.TestSnake)
+  module: *id001
+  mutations:
+  - lineno: 125
+    operator: CRP
+  number: 119
+  status: killed
+  tests_run: 6
+  time: 0.3289980888366699
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 127
+    operator: CRP
+  number: 120
+  status: survived
+  tests_run: 15
+  time: 0.8150005340576172
+- exception_traceback: "Traceback (most recent call last):\n  File \".\\test_snake.py\"\
+    , line 87, in test_right\n    self.assertLess(xCoordBefore, xCoordAfter)\nAssertionError:\
+    \ 0 not less than 0\n"
+  killer: test_right (test_snake.TestSnake)
+  module: *id001
+  mutations:
+  - lineno: 132
+    operator: CRP
+  number: 121
+  status: killed
+  tests_run: 10
+  time: 0.5441999435424805
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 134
+    operator: CRP
+  number: 122
+  status: survived
+  tests_run: 15
+  time: 0.8159983158111572
+- exception_traceback: "Traceback (most recent call last):\n  File \".\\test_snake.py\"\
+    , line 93, in test_up\n    self.assertGreater(yCoordBefore, yCoordAfter)\nAssertionError:\
+    \ 0 not greater than 0\n"
+  killer: test_up (test_snake.TestSnake)
+  module: *id001
+  mutations:
+  - lineno: 139
+    operator: CRP
+  number: 123
+  status: killed
+  tests_run: 14
+  time: 0.7610001564025879
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 140
+    operator: CRP
+  number: 124
+  status: survived
+  tests_run: 15
+  time: 0.8089978694915771
+- exception_traceback: "Traceback (most recent call last):\n  File \".\\test_snake.py\"\
+    , line 99, in test_down\n    self.assertLess(yCoordBefore, yCoordAfter)\nAssertionError:\
+    \ 0 not less than 0\n"
+  killer: test_down (test_snake.TestSnake)
+  module: *id001
+  mutations:
+  - lineno: 146
+    operator: CRP
+  number: 125
+  status: killed
+  tests_run: 1
+  time: 0.0559999942779541
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 147
+    operator: CRP
+  number: 126
+  status: survived
+  tests_run: 15
+  time: 0.8199999332427979
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 150
+    operator: CRP
+  number: 127
+  status: survived
+  tests_run: 15
+  time: 0.8169994354248047
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 150
+    operator: CRP
+  number: 128
+  status: survived
+  tests_run: 15
+  time: 0.8169999122619629
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 159
+    operator: CRP
+  number: 129
+  status: survived
+  tests_run: 15
+  time: 0.8169987201690674
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 159
+    operator: CRP
+  number: 130
+  status: survived
+  tests_run: 15
+  time: 0.819000244140625
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 160
+    operator: CRP
+  number: 131
+  status: survived
+  tests_run: 15
+  time: 0.8140015602111816
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 160
+    operator: CRP
+  number: 132
+  status: survived
+  tests_run: 15
+  time: 0.8229999542236328
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 161
+    operator: CRP
+  number: 133
+  status: survived
+  tests_run: 15
+  time: 0.8220000267028809
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 161
+    operator: CRP
+  number: 134
+  status: survived
+  tests_run: 15
+  time: 0.8270204067230225
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 162
+    operator: CRP
+  number: 135
+  status: survived
+  tests_run: 15
+  time: 0.8250041007995605
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 162
+    operator: CRP
+  number: 136
+  status: survived
+  tests_run: 15
+  time: 0.8250014781951904
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 50
+    operator: LCR
+  number: 137
+  status: survived
+  tests_run: 15
+  time: 0.829003095626831
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 85
+    operator: LCR
+  number: 138
+  status: survived
+  tests_run: 15
+  time: 0.8259992599487305
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 104
+    operator: LCR
+  number: 139
+  status: survived
+  tests_run: 15
+  time: 0.8290040493011475
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 50
+    operator: ROR
+  number: 140
+  status: survived
+  tests_run: 15
+  time: 0.8330011367797852
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 50
+    operator: ROR
+  number: 141
+  status: survived
+  tests_run: 15
+  time: 0.8320012092590332
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 60
+    operator: ROR
+  number: 142
+  status: survived
+  tests_run: 15
+  time: 0.8559999465942383
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 60
+    operator: ROR
+  number: 143
+  status: survived
+  tests_run: 15
+  time: 0.8300037384033203
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 62
+    operator: ROR
+  number: 144
+  status: survived
+  tests_run: 15
+  time: 0.8320002555847168
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 62
+    operator: ROR
+  number: 145
+  status: survived
+  tests_run: 15
+  time: 0.8300015926361084
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 64
+    operator: ROR
+  number: 146
+  status: survived
+  tests_run: 15
+  time: 0.8360002040863037
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 64
+    operator: ROR
+  number: 147
+  status: survived
+  tests_run: 15
+  time: 0.8310015201568604
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 66
+    operator: ROR
+  number: 148
+  status: survived
+  tests_run: 15
+  time: 0.8320012092590332
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 66
+    operator: ROR
+  number: 149
+  status: survived
+  tests_run: 15
+  time: 0.8350033760070801
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 85
+    operator: ROR
+  number: 150
+  status: survived
+  tests_run: 15
+  time: 0.8340005874633789
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 85
+    operator: ROR
+  number: 151
+  status: survived
+  tests_run: 15
+  time: 0.8340022563934326
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 92
+    operator: ROR
+  number: 152
+  status: survived
+  tests_run: 15
+  time: 0.8400006294250488
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 92
+    operator: ROR
+  number: 153
+  status: survived
+  tests_run: 15
+  time: 0.8320033550262451
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 104
+    operator: ROR
+  number: 154
+  status: survived
+  tests_run: 15
+  time: 0.838998556137085
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 104
+    operator: ROR
+  number: 155
+  status: survived
+  tests_run: 15
+  time: 0.8410038948059082
+- exception_traceback: "Traceback (most recent call last):\n  File \".\\test_snake.py\"\
+    , line 12, in setUp\n    self.gfg = GFG(self.master)\n  File \"Snake_Game\", line\
+    \ 36, in __init__\n  File \"Snake_Game\", line 70, in movement\n  File \"Snake_Game\"\
+    , line 53, in spawn\n  File \"Snake_Game\", line 119, in win\n  File \"C:\\Users\\\
+    William\\anaconda3\\lib\\os.py\", line 540, in execl\n    execv(file, args)\n\
+    OSError: [Errno 12] Not enough space\n"
+  killer: test_down (test_snake.TestSnake)
+  module: *id001
+  mutations:
+  - lineno: 116
+    operator: ROR
+  number: 156
+  status: killed
+  tests_run: 1
+  time: 0.06000113487243652
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 116
+    operator: ROR
+  number: 157
+  status: survived
+  tests_run: 15
+  time: 0.8430030345916748
+- exception_traceback: "Traceback (most recent call last):\n  File \".\\test_snake.py\"\
+    , line 81, in test_left\n    self.assertGreater(xCoordBefore, xCoordAfter)\nAssertionError:\
+    \ 0 not greater than 0\n"
+  killer: test_left (test_snake.TestSnake)
+  module: *id001
+  mutations:
+  - lineno: 125
+    operator: ROR
+  number: 158
+  status: killed
+  tests_run: 6
+  time: 0.3340005874633789
+- exception_traceback: "Traceback (most recent call last):\n  File \".\\test_snake.py\"\
+    , line 87, in test_right\n    self.assertLess(xCoordBefore, xCoordAfter)\nAssertionError:\
+    \ 0 not less than 0\n"
+  killer: test_right (test_snake.TestSnake)
+  module: *id001
+  mutations:
+  - lineno: 132
+    operator: ROR
+  number: 159
+  status: killed
+  tests_run: 10
+  time: 0.5610041618347168
+- exception_traceback: "Traceback (most recent call last):\n  File \".\\test_snake.py\"\
+    , line 93, in test_up\n    self.assertGreater(yCoordBefore, yCoordAfter)\nAssertionError:\
+    \ 0 not greater than 0\n"
+  killer: test_up (test_snake.TestSnake)
+  module: *id001
+  mutations:
+  - lineno: 139
+    operator: ROR
+  number: 160
+  status: killed
+  tests_run: 14
+  time: 0.7869985103607178
+- exception_traceback: "Traceback (most recent call last):\n  File \".\\test_snake.py\"\
+    , line 99, in test_down\n    self.assertLess(yCoordBefore, yCoordAfter)\nAssertionError:\
+    \ 0 not less than 0\n"
+  killer: test_down (test_snake.TestSnake)
+  module: *id001
+  mutations:
+  - lineno: 146
+    operator: ROR
+  number: 161
+  status: killed
+  tests_run: 1
+  time: 0.0610041618347168
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 150
+    operator: ROR
+  number: 162
+  status: survived
+  tests_run: 15
+  time: 0.8352935314178467
+number_of_tests: 15
+targets:
+- Snake_Game
+tests:
+- name: test_snake
+  target: null
+  time: 0.7950000762939453
+time_stats:
+  create_mutant_module: 0.25200510025024414
+  create_target_ast: 0.005999565124511719
+  mutate_module: 136.1501224040985
+  run_tests_with_mutant: 121.73322200775146
+total_time: 136.95712280273438
