@@ -4,7 +4,7 @@ import sys
 import random as rnd
 from tkinter import *
 from tkinter.ttk import * 
-  
+
 class GFG:
     def __init__(self, master = None):
         self.master = master
@@ -162,4 +162,4 @@ if __name__ == "__main__":
     master.bind("<KeyPress-Down>", lambda e: gfg.down(e))
       
     # Infnite loop breaks only by interrupt
-    mainloop()
+    #mainloop()
