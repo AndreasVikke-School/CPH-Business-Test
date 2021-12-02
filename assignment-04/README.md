@@ -103,3 +103,25 @@ A: Snake game: Make a classic snake game using TDD. To remind you the (minimum) 
   * Point(s) subtracted when starving (e.g. no apple eaten for an amount of time)
 
 **TODO: Add pictures of code coverage and assignment work** 
+
+### Coverage report
+Coverage report is seen on the picture below.
+<img src="/CoverageReport.png">
+The report was done using the Coverage.py tool. Our coverage percentage is at 78%.
+There were some issues with getting a 100% score, but as the game is run with a mainloop().
+
+### Mutation test
+Mutation test was done with the Mutpy module.
+Usage of this module is done in the CLI with a command like the one below:
+````
+mut.py --target Snake_game.py --unit-test test_snake.py -m --runner pytest
+```` 
+After completion it can output a report in a .yaml file, which is located in the root folder of this project - reportonsnakegame.yaml
+
+### Static Analysis
+This is done using the pylint module. It is done with a CLI command as:
+````
+pylint Snake_Game.py
+````
+It will yield a result in the form of a score which goes up to 10. As this module is quite rigid, you can define your own set of rules that it bases its score on.
+If it is run without any custom rules, it will use a default set of rules to generate the score.
